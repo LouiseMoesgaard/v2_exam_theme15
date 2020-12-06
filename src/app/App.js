@@ -1,6 +1,6 @@
 import React from "react";
 import Dashboard from './pages/dashboard/Dashboard';
-import OrderForm from './pages/orderform/Orderform';
+import OrderForm from './pages/orderform/OrderForm';
 import {Route, Switch} from 'react-router';
 import {BrowserRouter as Router} from 'react-router-dom';
 // import React, {useState, useEffect} from "react";
