@@ -1,5 +1,5 @@
 import React from 'react';
-import NavigationOrder from '../../components/navbar/NavigationOrder';
+import NavigationOrder from '../../components/navigationOrder/NavigationOrder';
 
 class OrderForm extends React.Component {
     render(){
