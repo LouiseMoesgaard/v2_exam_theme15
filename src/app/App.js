@@ -9,7 +9,7 @@ import './App.scss';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {appData: null}; 
+    this.state = {}; 
   }
 
   interval = null;
@@ -17,17 +17,14 @@ class App extends React.Component {
     componentDidMount () {
       this.interval = setInterval(() => {
         BarData.getData().then(data => {
-          this.setAppData(data);
+          this.setState(data);
+          console.log(this.state)
         })
       }, 10000);
     }
 
     componentWillUnmount () {
       clearInterval(this.interval);
-    }
-
-    setAppData(json){
-      this.appData = json;
     }
 
   
@@ -41,7 +38,11 @@ class App extends React.Component {
 
             <Route path="/order" render={()=> (
               <div className="OrderWrapper">
-                <OrderForm/>
+                {
+                  this.state.storage?
+                  <OrderForm storage={this.state.storage}/> :
+                  null
+                }
               </div>
               )}/>
           </Switch>
