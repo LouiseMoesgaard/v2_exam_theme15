@@ -1,2 +1,5 @@
 [1207/164152.206:ERROR:directory_reader_win.cc(43)] FindFirstFile: Den angivne sti blev ikke fundet. (0x3)
 [1207/195900.642:ERROR:directory_reader_win.cc(43)] FindFirstFile: Den angivne sti blev ikke fundet. (0x3)
+[1208/002421.693:ERROR:directory_reader_win.cc(43)] FindFirstFile: Den angivne sti blev ikke fundet. (0x3)
+[1208/094251.650:ERROR:directory_reader_win.cc(43)] FindFirstFile: Den angivne sti blev ikke fundet. (0x3)
+[1208/194346.585:ERROR:directory_reader_win.cc(43)] FindFirstFile: Den angivne sti blev ikke fundet. (0x3)

@@ -13,7 +13,10 @@ class DashItems extends React.Component {
              <Link to="#">
                 <img alt="logo" src={logo}></img>
             </Link>
-            <p>Today's sales: 1000 kr.| <Timer /></p>   
+            <div className="textContainer">
+                <p>Today's sales: 1000 kr.|</p>
+                <Timer /> 
+            </div>
        </div>
        );
     }
