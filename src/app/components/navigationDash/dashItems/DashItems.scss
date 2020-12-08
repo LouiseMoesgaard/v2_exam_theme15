@@ -2,8 +2,7 @@
 
 .DashItems {
   display: grid;
-  // grid-template-columns: 1fr 0.5fr;
-  grid-template-columns: 2fr 0.5fr;
+  grid-template-columns: 1fr 0.5fr;
   padding: 10px 10px;
   align-items: center;
 
@@ -30,13 +29,17 @@
       width: 80%;
     }
   }
-  @media screen and (min-width: 500px) {
+  @media screen and (min-width: 1200px) {
     .DashItems {
       display: grid;
       grid-template-rows: 1fr;
       grid-template-columns: 2fr 0.5fr;
       padding: 10px 10px;
       align-items: center;
+    }
+
+    .textContainer{
+      justify-self: flex-end;
     }
     a,
     a:link,
