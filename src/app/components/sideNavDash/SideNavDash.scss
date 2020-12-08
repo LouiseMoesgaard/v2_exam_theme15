@@ -1,0 +1,25 @@
+@import "../../generalStyle/variables.scss";
+@import "../../generalStyle/fontface.scss";
+
+.SideNavItems {
+  background-color: $secondary;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  padding: 25px 35px 25px 25px;
+  width: 15%;
+  height: 600px;
+  position: fixed;
+  margin: 0;
+
+  p {
+    font-family: "Inconsolata Regular";
+    color: white;
+    font-size: 1rem;
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+    line-height: 3rem;
+  }
+}
