@@ -1,0 +1,56 @@
+@import '../../generalStyle/variables.scss';
+
+.Product{
+    display: grid;
+    padding: 10px 20px;
+    grid-template-columns: 25% 47% 24%;
+    grid-template-rows: 33% 33% 33%;
+    grid-gap: 2%;
+    grid-template-areas: 
+    "picture . ."
+    "picture header count"
+    "picture more .";
+
+
+    img {
+        width: 100%;
+        grid-area: picture;
+    }
+    h3 {
+        color: $white;
+        grid-area: header;
+        margin: 0;
+        font-size: 1rem;
+
+    }
+    .ReadMore{
+        grid-area: more;
+        p {
+            color: $white;
+            margin: 0;
+        }
+    }
+
+    .Count{
+        grid-area: count;
+        justify-self: flex-end;
+
+        span{
+            color: $white;
+            padding: 0 10px;
+        }
+
+        button{
+            display: inline-block;
+            border-radius: 50%;
+            text-align: center;
+            border: 0;
+            padding: 0;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            font-size: 20px;
+        }
+    }
+    
+}
