@@ -1,6 +1,57 @@
 @import "../../generalStyle/variables.scss";
 @import "../../generalStyle/fontface.scss";
+.overviewDash {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: relative;
+  top: 3vh;
+  left: 33vw;
 
-.QueueBoxDash {
-  background-color: $white;
+  h1,
+  p {
+    font-family: "Inconsolata Regular";
+    color: $secondary;
+  }
+
+  .QueueBoxDash {
+    background-color: $white;
+    border: solid black 1px;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50vw;
+    height: 75vh;
+    padding: 0px 15px 0px 15px;
+    margin: 15px;
+  }
+
+  .ProcessBoxDash {
+    background-color: $white;
+    border: solid black 1px;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50vw;
+    height: 75vh;
+    padding: 0px 15px 0px 15px;
+    margin: 15px;
+  }
+
+  .ReadyBoxDash {
+    background-color: $white;
+    border: solid black 1px;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 50vw;
+    height: 75vh;
+    padding: 0px 15px 0px 15px;
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .overviewDash {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin: 0 auto;
+    max-width: 800px;
+  }
 }
