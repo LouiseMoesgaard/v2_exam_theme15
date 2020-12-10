@@ -24,3 +24,5 @@ yarn-error.log*
 **/Icon\r
 **/desktop.ini
 .eslintcache
+
+debug.log
