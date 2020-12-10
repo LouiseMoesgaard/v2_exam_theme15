@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 
 import './OrderItems.scss';
 
-import logo from '../../../images/right.svg'
+import logo from '../../../images/logo_right.svg'
 
 class OrderItems extends React.Component {
     render(){
