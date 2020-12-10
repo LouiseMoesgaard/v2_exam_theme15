@@ -1,7 +1,7 @@
 import React from "react";
 import Dashboard from './pages/dashboard/Dashboard';
-import OrderForm from './pages/orderform/Orderform';
 import Statistics from './pages/dashboard/Statistics';
+import OrderForm from './pages/orderform/Orderform';
 import {Route, Switch} from 'react-router';
 import {BrowserRouter as Router} from 'react-router-dom';
 import BarData from './services/BarData';
