@@ -31,25 +31,28 @@ const OTHERPRODUCT = [
         name: "Lemongrass",
         amount: 10,
         type: "cider",
-        
+        desc: "This is a drink for vegans. lemongrass is a plant that tastes of lemon. Why not just use lemon? I would have done that"
     },
 
     {
         name: "Salty Liquorice",
         amount: 10,
-        type: "shots"
+        type: "shots",
+        desc: "Salt and licorice? It is a delicious combination - if you like salt and licorice. I do not like it, but others love it. Mothers-in-law absolutely love it"
     },
 
     {
         name: "Sour Tropical",
         amount: 10,
-        type: "shots"
+        type: "shots",
+        desc: "This is an absolutely amazing shot. This is because it is tropical and sweet and completely devoid of disgusting ingredients such as licorice."
     },
 
     {
         name: "Devil's Breath",
         amount: 10,
-        type: "shots"
+        type: "shots",
+        desc: "This shot is made by the devil. He lacked a better marketing strategy and came up with this concept. It tastes eerily good with a slight taste of soot."
     },
 
     {
