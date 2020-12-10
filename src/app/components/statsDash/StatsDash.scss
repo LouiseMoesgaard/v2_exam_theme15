@@ -1,0 +1,47 @@
+@import "../../generalStyle/variables.scss";
+@import "../../generalStyle/fontface.scss";
+
+.statisticsDash {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    top: 10vh;
+    left: 17vw;
+    z-index: 2;
+  
+    h1,
+    p {
+      font-family: "Inconsolata Regular";
+      color: $secondary;
+    }
+  
+    .WeekSales {
+      background-color: rgba(255, 255, 255, 0.8);
+      display: grid;
+      width: 78vw;
+      grid-template-columns: 1fr;
+      height: 25vh;
+      padding: 20px;
+      margin: 0 0 2.5vw 0;
+    }
+  
+    .BeerStorage {
+      background-color: rgba(255, 255, 255, 0.8);
+      display: grid;
+      width: 78vw;
+      grid-template-columns: 1fr;
+      height: 48vh;
+      padding: 20px;
+      margin: 0;
+    }
+
+  }
+  @media screen and (min-width: 1030px) {
+    .overviewDash {
+      flex-wrap: nowrap;
+      flex-direction: column;
+      margin: 0 auto;
+      max-width: 80vw;
+    }
+  }

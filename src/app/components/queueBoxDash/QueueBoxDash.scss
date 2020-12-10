@@ -5,8 +5,9 @@
   flex-wrap: wrap;
   flex-direction: column;
   position: relative;
-  top: 3vh;
-  left: 33vw;
+  top: 10vh;
+  left: 17vw;
+  z-index: 2;
 
   h1,
   p {
@@ -15,36 +16,33 @@
   }
 
   .QueueBoxDash {
-    background-color: $white;
-    border: solid black 1px;
+    background-color: rgba(255, 255, 255, 0.8);
     display: grid;
+    width: 25vw;
     grid-template-columns: 1fr;
-    width: 50vw;
-    height: 75vh;
-    padding: 0px 15px 0px 15px;
-    margin: 15px;
+    height: 82vh;
+    padding: 20px;
+    margin: 0 2.5vw 0 0;
   }
 
   .ProcessBoxDash {
-    background-color: $white;
-    border: solid black 1px;
+    background-color: rgba(255, 255, 255, 0.8);
     display: grid;
+    width: 25vw;
     grid-template-columns: 1fr;
-    width: 50vw;
-    height: 75vh;
-    padding: 0px 15px 0px 15px;
-    margin: 15px;
+    height: 82vh;
+    padding: 20px;
+    margin: 0;
   }
 
   .ReadyBoxDash {
-    background-color: $white;
-    border: solid black 1px;
+    background-color: rgba(255, 255, 255, 0.8);
     display: grid;
+    width: 25vw;
     grid-template-columns: 1fr;
-    width: 50vw;
-    height: 75vh;
-    padding: 0px 15px 0px 15px;
-    margin: 15px;
+    height: 82vh;
+    padding: 20px;
+    margin: 0 0 0 2.5vw;
   }
 }
 @media screen and (min-width: 1030px) {
@@ -52,6 +50,6 @@
     flex-wrap: nowrap;
     flex-direction: row;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 80vw;
   }
 }

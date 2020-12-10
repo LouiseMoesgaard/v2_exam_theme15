@@ -9,15 +9,16 @@ class SideNavDash extends React.Component {
         <div className="SideNavItems">
             <div className="linksContainer">
             <Link to="#">
-                <p>Overview</p>
+                <p>Orders</p>
             </Link>
-            <Link to="#">
-                <p>Statistics</p>
+            <Link to="/stats">
+                <p>Overview</p>
             </Link>
             <Link to="#">
                 <p>Problems</p>
             </Link>
             </div>
+            <div className="markup"></div>
         </div>
        );
     }

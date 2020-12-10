@@ -1,6 +1,7 @@
 import React from "react";
 import Dashboard from './pages/dashboard/Dashboard';
 import OrderForm from './pages/orderform/Orderform';
+import Statistics from './pages/dashboard/Statistics';
 import {Route, Switch} from 'react-router';
 import {BrowserRouter as Router} from 'react-router-dom';
 import BarData from './services/BarData';
@@ -35,6 +36,7 @@ class App extends React.Component {
         <div className="App">
           <Switch>
             <Route path="/dashboard" component={Dashboard}/>
+            <Route path="/stats" component={Statistics}/>
 
             <Route path="/order" render={()=> (
               <div className="OrderWrapper">
