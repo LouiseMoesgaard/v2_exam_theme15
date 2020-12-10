@@ -7,19 +7,30 @@
   grid-template-columns: 1fr;
   padding: 0px 40px 0px 15px;
   align-content: center;
-  width: 15%;
-  height: 90vh;
+  width: 12vw;
+  height: 100vh;
   position: fixed;
   margin: 0;
 
   p {
     font-family: "Inconsolata Regular";
     color: white;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: 0;
   }
   a {
     text-decoration: none;
-    line-height: 3rem;
+    line-height: 4rem;
+  }
+
+  .markup {
+    background-image: url(../../images/select.svg);
+    width: 3vw;
+    height: 2vw;
+    background-size: cover;
+    position: absolute;
+    left: 0.8vw;
+    top: 42vh;
+    z-index: -1;
   }
 }
