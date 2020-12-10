@@ -1,0 +1,61 @@
+@import "../../generalStyle/variables.scss";
+@import "../../generalStyle/fontface.scss";
+
+.Problems {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: relative;
+  top: 10vh;
+  left: 17vw;
+  z-index: 2;
+
+  h1,
+  p {
+    font-family: "Inconsolata Regular";
+    color: $secondary;
+  }
+
+  .NeedsHelp {
+    background-color: rgba(255, 255, 255, 0.8);
+    display: grid;
+    width: 25vw;
+    grid-template-columns: 1fr;
+    height: 82vh;
+    padding: 20px;
+    margin: 0 2.5vw 0 0;
+  }
+
+  .DoubleOrder {
+    background-color: rgba(255, 255, 255, 0.8);
+    display: grid;
+    width: 25vw;
+    grid-template-columns: 1fr;
+    height: 82vh;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .FailedPayment {
+    background-color: rgba(255, 255, 255, 0.8);
+    display: grid;
+    width: 25vw;
+    grid-template-columns: 1fr;
+    height: 82vh;
+    padding: 20px;
+    margin: 0 0 0 2.5vw;
+  }
+}
+
+.markup {
+  top: 52vh;
+}
+
+@media screen and (min-width: 1030px) {
+  .Problems {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin: 0 auto;
+    max-width: 80vw;
+  }
+}
