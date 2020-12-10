@@ -8,7 +8,7 @@ class SideNavDash extends React.Component {
         return (
         <div className="SideNavItems">
             <div className="linksContainer">
-            <Link to="#">
+            <Link to="/dashboard">
                 <p>Orders</p>
             </Link>
             <Link to="/stats">
