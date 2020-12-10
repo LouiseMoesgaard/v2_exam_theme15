@@ -1,11 +1,13 @@
+
 @import '../../../generalStyle/fontface.scss';
 @import '../../../generalStyle/variables.scss';
 
+
 .OrderItems {
-    display: grid; 
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
-    padding: 5px 10px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 5px 10px;
 
     a,
     a:link,
@@ -16,14 +18,14 @@
         text-decoration: none;
         align-self: center;
 
-        p {
-            font-family: 'Inconsolata Regular';
-            font-size: 1.1rem;
-            margin: 0;
-        }
-
-        img {
-            width: 100%;   
-        }   
+    p {
+      font-family: "Inconsolata Regular";
+      font-size: 1.1rem;
+      margin: 0;
     }
+
+    img {
+      width: 100%;
+    }
+  }
 }
