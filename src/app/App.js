@@ -35,6 +35,7 @@ class App extends React.Component {
         <div className="App">
           <Switch>
             <Route path="/dashboard" component={Dashboard}/>
+            
 
             <Route path="/order" render={()=> (
               <div className="OrderWrapper">

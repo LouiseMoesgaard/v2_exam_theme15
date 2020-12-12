@@ -1,0 +1,76 @@
+@import '../../generalStyle/variables.scss';
+
+.OrderDisplay{
+    background-color: $lightblue;
+
+    .OrderDisplayGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .Total{
+            justify-self: flex-end;
+        }
+    }
+
+    h1, 
+    h2{
+        color: $primary;
+        list-style: none;
+        font-family: 'Inconsolata regular';
+        padding-bottom: 10px;
+    }
+    
+    
+    p,
+    li,
+    span{
+        color: $primary;
+        list-style: none;
+        font-family: 'Inconsolata regular';
+        padding-bottom: 10px;
+        font-size: .9rem;
+        }
+
+    span{
+        float: right;
+    }
+
+    ul {
+        padding: 0 38px;
+    }
+
+    hr{
+        background-color: $primary;
+        border: 1.3px solid $primary;
+        margin: 0 20px;
+    }
+
+    .totalNrGrid{
+        display: grid;
+        grid-template-columns: 1fr .5fr;
+        justify-items: flex-end;
+        align-items: center;
+        padding: 10px 38px;
+
+        .listTotalSum{
+            justify-self: start;
+            align-self: center;
+        }
+
+    }
+
+    .SubmitGrid{
+        display: grid;
+        grid-template-columns: 1fr .5fr;
+        justify-items: flex-end;
+        align-items: center;
+        padding: 30px 20px;
+
+        
+        h2{
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
