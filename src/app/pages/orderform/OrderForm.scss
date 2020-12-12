@@ -1,6 +1,11 @@
 @import '../../generalStyle/variables.scss';
+@import '../../generalStyle/fontface.scss';
 
 .OrderForm {
-    background-color: $secondary;
+    background: linear-gradient($secondary, $primary);
 
+    h1, 
+    h2 {
+        padding: 0 20px;
+    }
 }

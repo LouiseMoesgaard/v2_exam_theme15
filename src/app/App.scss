@@ -6,16 +6,39 @@ body {
 }
 
 h1{
+  font-family: 'Inconsolata regular';
   font-size: 2rem;
   color: $white;
-  padding: 0 20px;
 }
 
+
 h2{
+  font-family: 'Inconsolata regular';
   color: $white;
   font-size: 1.5rem;
-  padding: 0 20px;
 }
+
+h3{
+  font-family: 'Inconsolata regular';
+  color: $white;
+  font-size: 1.2rem;
+}
+
+
+p,
+li{
+  font-family: 'Montreal regular';
+  color: $white;
+  font-size: 0.9rem;
+  line-height: 17px;
+}
+
+span {
+  font-family: 'Inconsolata regular';
+  color: $white;
+  font-size: 1.4rem;
+}
+
 
 @media screen and (min-width: 600px){
   .App {
