@@ -1,5 +1,7 @@
 import React from "react";
 import Dashboard from './pages/dashboard/Dashboard';
+import Statistics from './pages/dashboard/Statistics';
+import Problems from './pages/dashboard/Problems';
 import OrderForm from './pages/orderform/Orderform';
 import {Route, Switch} from 'react-router';
 import {BrowserRouter as Router} from 'react-router-dom';
@@ -35,8 +37,8 @@ class App extends React.Component {
         <div className="App">
           <Switch>
             <Route path="/dashboard" component={Dashboard}/>
-            
-
+            <Route path="/stats" component={Statistics}/>
+            <Route path="/problems" component={Problems}/>
             <Route path="/order" render={()=> (
               <div className="OrderWrapper">
                 {

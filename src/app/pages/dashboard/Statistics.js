@@ -1,14 +1,14 @@
 import React from 'react';
 import NavigationDash from '../../components/navigationDash/NavigationDash';
-import QueueBoxDash from '../../components/queueBoxDash/QueueBoxDash';
+import StatsDash from '../../components/statsDash/StatsDash';
 import SideNavDash from '../../components/sideNavDash/SideNavDash';
 
-import './Dashboard.scss';
+import './Statistics.scss';
 
-class Dashboard extends React.Component {
+class Statistics extends React.Component {
     render(){
         return (
-            <div className="Dashboard">
+            <div className="Statistic">
             <div className="p1"></div>
             <div className="p2"></div>
             <div className="p3"></div>
@@ -17,11 +17,11 @@ class Dashboard extends React.Component {
             <div className="p6"></div>
             <NavigationDash />
             <SideNavDash />
-            <QueueBoxDash />
+            <StatsDash />
             </div>
         );
         
     }
 }
   
-  export default Dashboard;
+  export default Statistics;
