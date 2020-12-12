@@ -3,6 +3,7 @@ import Dashboard from './pages/dashboard/Dashboard';
 import Statistics from './pages/dashboard/Statistics';
 import Problems from './pages/dashboard/Problems';
 import OrderForm from './pages/orderform/Orderform';
+import Payment from './pages/Payment';
 import {Route, Switch} from 'react-router';
 import {BrowserRouter as Router} from 'react-router-dom';
 import BarData from './services/BarData';
@@ -20,7 +21,6 @@ class App extends React.Component {
       this.interval = setInterval(() => {
         BarData.getData().then(data => {
           this.setState(data);
-          console.log(this.state)
         })
       }, 10000);
     }
@@ -48,6 +48,9 @@ class App extends React.Component {
                 }
               </div>
               )}/>
+              <Route path="/payment" render={()=>(
+                <Payment/>
+                )}/>
           </Switch>
         </div>
       </Router>
