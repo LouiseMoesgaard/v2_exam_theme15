@@ -14,7 +14,7 @@ class SideNavDash extends React.Component {
             <Link to="/stats">
                 <p>Overview</p>
             </Link>
-            <Link to="#">
+            <Link to="/problems">
                 <p>Problems</p>
             </Link>
             </div>

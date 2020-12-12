@@ -2,60 +2,135 @@
 @import "../../generalStyle/fontface.scss";
 
 .Problems {
-  display: inline-flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  position: relative;
-  top: 10vh;
-  left: 17vw;
-  z-index: 2;
+  background: linear-gradient($secondary, $primary);
+  height: 100vh;
+  z-index: 0;
 
-  h1,
-  p {
-    font-family: "Inconsolata Regular";
-    color: $secondary;
+  .p1 {
+    background-image: url(../../images/planet1.svg);
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 78vh;
+    left: 36vw;
+    z-index: 1;
   }
 
-  .NeedsHelp {
-    background-color: rgba(255, 255, 255, 0.8);
-    display: grid;
-    width: 25vw;
-    grid-template-columns: 1fr;
-    height: 82vh;
-    padding: 20px;
-    margin: 0 2.5vw 0 0;
+  .p2 {
+    background-image: url(../../images/planet1.svg);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 31vh;
+    left: 80vw;
+    z-index: 1;
   }
 
-  .DoubleOrder {
-    background-color: rgba(255, 255, 255, 0.8);
-    display: grid;
-    width: 25vw;
-    grid-template-columns: 1fr;
-    height: 82vh;
-    padding: 20px;
-    margin: 0;
+  .p3 {
+    background-image: url(../../images/planet2.svg);
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 26vh;
+    left: 50vw;
+    z-index: 1;
   }
 
-  .FailedPayment {
-    background-color: rgba(255, 255, 255, 0.8);
-    display: grid;
-    width: 25vw;
-    grid-template-columns: 1fr;
-    height: 82vh;
-    padding: 20px;
-    margin: 0 0 0 2.5vw;
+  .p4 {
+    background-image: url(../../images/planet2.svg);
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    top: 65vh;
+    left: 16vw;
+    z-index: 1;
   }
-}
 
-.markup {
-  top: 52vh;
-}
+  .p5 {
+    background-image: url(../../images/planet3.svg);
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    top: 55vh;
+    left: 68vw;
+    z-index: 1;
+  }
 
-@media screen and (min-width: 1030px) {
-  .Problems {
-    flex-wrap: nowrap;
-    flex-direction: row;
-    margin: 0 auto;
-    max-width: 80vw;
+  .p6 {
+    background-image: url(../../images/planet3.svg);
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: 22vh;
+    left: 24vw;
+    z-index: 1;
+  }
+
+  background: linear-gradient($secondary, $primary);
+  height: 100vh;
+  z-index: 0;
+
+  .p1 {
+    background-image: url(../../images/planet1.svg);
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 78vh;
+    left: 36vw;
+    z-index: 1;
+  }
+
+  .p2 {
+    background-image: url(../../images/planet1.svg);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 31vh;
+    left: 80vw;
+    z-index: 1;
+  }
+
+  .p3 {
+    background-image: url(../../images/planet2.svg);
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 26vh;
+    left: 50vw;
+    z-index: 1;
+  }
+
+  .p4 {
+    background-image: url(../../images/planet2.svg);
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    top: 65vh;
+    left: 16vw;
+    z-index: 1;
+  }
+
+  .p5 {
+    background-image: url(../../images/planet3.svg);
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    top: 55vh;
+    left: 68vw;
+    z-index: 1;
+  }
+
+  .p6 {
+    background-image: url(../../images/planet3.svg);
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: 22vh;
+    left: 24vw;
+    z-index: 1;
+  }
+
+  .markup {
+    top: 57vh;
   }
 }
