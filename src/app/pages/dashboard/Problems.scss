@@ -134,3 +134,10 @@
     top: 57vh;
   }
 }
+
+@media screen and (min-width: 1030px) {
+  .Problems {
+    overflow: hidden;
+    position: relative;
+  }
+}
