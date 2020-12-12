@@ -18,7 +18,7 @@ class Product extends React.Component {
         if(newCount < 0){
             newCount = 0;
         }
-
+        props.onCountChange(props.product, newCount);
         return{
             count: newCount
         }
@@ -31,7 +31,7 @@ class Product extends React.Component {
             newCount = amount;
         }
 
-        props.onCountChange(props.product.name, newCount);
+        props.onCountChange(props.product, newCount);
         return{
             count: newCount
         }
@@ -40,13 +40,20 @@ class Product extends React.Component {
     render(){
         const { product } = this.props;
         return (
-            <div className="Product">
+            <div className={`Product ${this.state.readMoreOpen ? "desc" : ""}`}>
                 <img alt="The product" src={PRODUCTIMG[product.name]}/>
                 <h3> {product.name} </h3>
                 <div className="ReadMore">
                     <p onClick={()=> (this.setState((state)=> ({readMoreOpen:!state.readMoreOpen})))}>
                         {this.state.readMoreOpen? "Read less": "Read more"}...
-                    </p>  
+                    </p> 
+
+                    {
+                        this.state.readMoreOpen?
+                        <div className="descText">
+                        <p>{product.desc}</p>
+                        </div>: null
+                    }
                 </div>
 
                 <div className="Count">
