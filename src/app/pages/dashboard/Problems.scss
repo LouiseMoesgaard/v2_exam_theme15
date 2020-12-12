@@ -6,131 +6,83 @@
   height: 100vh;
   z-index: 0;
 
-  .p1 {
-    background-image: url(../../images/planet1.svg);
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    top: 78vh;
-    left: 36vw;
-    z-index: 1;
-  }
-
-  .p2 {
-    background-image: url(../../images/planet1.svg);
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 31vh;
-    left: 80vw;
-    z-index: 1;
-  }
-
-  .p3 {
-    background-image: url(../../images/planet2.svg);
-    width: 180px;
-    height: 180px;
-    position: absolute;
-    top: 26vh;
-    left: 50vw;
-    z-index: 1;
-  }
-
-  .p4 {
-    background-image: url(../../images/planet2.svg);
-    width: 110px;
-    height: 110px;
-    position: absolute;
-    top: 65vh;
-    left: 16vw;
-    z-index: 1;
-  }
-
-  .p5 {
-    background-image: url(../../images/planet3.svg);
-    width: 220px;
-    height: 220px;
-    position: absolute;
-    top: 55vh;
-    left: 68vw;
-    z-index: 1;
-  }
-
-  .p6 {
-    background-image: url(../../images/planet3.svg);
-    width: 130px;
-    height: 130px;
-    position: absolute;
-    top: 22vh;
-    left: 24vw;
-    z-index: 1;
-  }
-
-  background: linear-gradient($secondary, $primary);
-  height: 100vh;
-  z-index: 0;
-
-  .p1 {
-    background-image: url(../../images/planet1.svg);
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    top: 78vh;
-    left: 36vw;
-    z-index: 1;
-  }
-
-  .p2 {
-    background-image: url(../../images/planet1.svg);
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 31vh;
-    left: 80vw;
-    z-index: 1;
-  }
-
-  .p3 {
-    background-image: url(../../images/planet2.svg);
-    width: 180px;
-    height: 180px;
-    position: absolute;
-    top: 26vh;
-    left: 50vw;
-    z-index: 1;
-  }
-
-  .p4 {
-    background-image: url(../../images/planet2.svg);
-    width: 110px;
-    height: 110px;
-    position: absolute;
-    top: 65vh;
-    left: 16vw;
-    z-index: 1;
-  }
-
-  .p5 {
-    background-image: url(../../images/planet3.svg);
-    width: 220px;
-    height: 220px;
-    position: absolute;
-    top: 55vh;
-    left: 68vw;
-    z-index: 1;
-  }
-
-  .p6 {
-    background-image: url(../../images/planet3.svg);
-    width: 130px;
-    height: 130px;
-    position: absolute;
-    top: 22vh;
-    left: 24vw;
-    z-index: 1;
-  }
-
   .markup {
-    top: 57vh;
+    width: 6vw;
+    height: 4vw;
+    top: 59vh;
+    left: 2vw;
+  }
+
+  @media screen and (min-width: 1030px) {
+    body {
+      overflow: hidden;
+    }
+
+    .p1 {
+      background-image: url(../../images/planet1.svg);
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: 78vh;
+      left: 36vw;
+      z-index: 1;
+    }
+
+    .p2 {
+      background-image: url(../../images/planet1.svg);
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 31vh;
+      left: 80vw;
+      z-index: 1;
+    }
+
+    .p3 {
+      background-image: url(../../images/planet2.svg);
+      width: 180px;
+      height: 180px;
+      position: absolute;
+      top: 26vh;
+      left: 50vw;
+      z-index: 1;
+    }
+
+    .p4 {
+      background-image: url(../../images/planet2.svg);
+      width: 110px;
+      height: 110px;
+      position: absolute;
+      top: 65vh;
+      left: 16vw;
+      z-index: 1;
+    }
+
+    .p5 {
+      background-image: url(../../images/planet3.svg);
+      width: 220px;
+      height: 220px;
+      position: absolute;
+      top: 55vh;
+      left: 68vw;
+      z-index: 1;
+    }
+
+    .p6 {
+      background-image: url(../../images/planet3.svg);
+      width: 130px;
+      height: 130px;
+      position: absolute;
+      top: 22vh;
+      left: 24vw;
+      z-index: 1;
+    }
+
+    .markup {
+      width: 3vw;
+      height: 2vw;
+      top: 57vh;
+      left: 0.8vw;
+    }
   }
 }
