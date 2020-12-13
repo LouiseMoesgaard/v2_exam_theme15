@@ -58,31 +58,36 @@ const OTHERPRODUCT = [
     {
         name: "Applepie",
         amount: 10,
-        type: "shots"
+        type: "shots",
+        desc: "Applepie in itself is a delicious desert. Cake rarely translates well into drink - just ask Mor Jytte. But our applepie shot is a must-try if you otherwise like your old fashioned applepie!"
     },
 
     {
         name: "Fireball",
         amount: 10,
-        type: "shots"
+        type: "shots",
+        desc: "Fireball is exactly what you think it is. It is that shot which you see crazy drunk people take and it looks like a fire hazard! How come their mouths aren't burning, right? Trippy, dude."
     },
 
     {
         name: "Chips",
         amount: 10,
-        type: "snacks"
+        type: "snacks",
+        desc: "Because popcorns are only meant for the cinema. You need salt, not corn. Get yourself together."
     },
 
     {
         name: "Peanuts",
         amount: 10,
-        type: "snacks"
+        type: "snacks",
+        desc: "Who doesn't like peanuts? Only the weirdos who don't buy these. You are not a weirdo, right? Buy them!"
     },
 
     {
         name: "Salty Pretzels",
         amount: 10,
-        type: "snacks"
+        type: "snacks",
+        desc: "We don't have salt sticks so instead we have have salty pretzels. Basically the same but just sticks that have been formed into pretzels."
     }
 ]
 
