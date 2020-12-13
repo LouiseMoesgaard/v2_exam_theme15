@@ -1,7 +1,6 @@
 import React from 'react';
 import NavigationOrder from '../../components/navigationOrder/NavigationOrder';
 import Product from '../../components/product/Product';
-import OTHERPRODUCTS from '../../constants/OtherProducts';
 import OrderDisplay from '../../components/orderDisplay/OrderDisplay';
 import './OrderForm.scss';
 
@@ -46,8 +45,9 @@ class OrderForm extends React.Component {
 
                 <h1>Beers...</h1>
                 <h2>30 kr.</h2>
+
                 {
-                    storage.map((value, index)=>{
+                    storage.filter((product)=> product.type == "beer").map((value, index)=>{
                         return <Product product={value} onCountChange={this.getCount} key={index}></Product>
                     })
                 }
@@ -56,7 +56,7 @@ class OrderForm extends React.Component {
                 <h2>40 kr.</h2>
 
                 {
-                    OTHERPRODUCTS.filter((product)=> product.type == "cider").map((value, index)=>{
+                    storage.filter((product)=> product.type == "cider").map((value, index)=>{
                         return <Product product={value} onCountChange={this.getCount} key={index}></Product>
                     })
                 }
@@ -65,7 +65,7 @@ class OrderForm extends React.Component {
                 <h2>15 kr.</h2>
 
                 {
-                    OTHERPRODUCTS.filter((product)=> product.type == "shots").map((value, index)=>{
+                    storage.filter((product)=> product.type == "shots").map((value, index)=>{
                         return <Product product={value} onCountChange={this.getCount} key={index}></Product>
                     })
                 }
@@ -75,7 +75,7 @@ class OrderForm extends React.Component {
                 <h2>25 kr.</h2>
 
                 {
-                    OTHERPRODUCTS.filter((product)=> product.type == "snacks").map((value, index)=>{
+                    storage.filter((product)=> product.type == "snacks").map((value, index)=>{
                         return <Product product={value} onCountChange={this.getCount} key={index}></Product>
                     })
                 }
