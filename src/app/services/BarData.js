@@ -1,3 +1,5 @@
+import BEERS from '../constants/Beers';
+
 const BarData = {
 
     getData: ()=> {
@@ -5,7 +7,7 @@ const BarData = {
         .then(r=>r.json())
         .then(data => {
             data.storage = data.storage.map(item => {
-                return {...item,price: 30}
+                return {...item,price: 30,desc: BEERS[item.name]}
             })
             return data;
         });
