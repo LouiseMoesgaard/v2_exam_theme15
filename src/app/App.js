@@ -7,6 +7,7 @@ import {Route, Switch} from 'react-router';
 import {BrowserRouter as Router} from 'react-router-dom';
 import BarData from './services/BarData';
 import './App.scss';
+import StorageList from "./components/storageList/StorageList";
 
 class App extends React.Component {
   constructor(props) {
@@ -37,7 +38,12 @@ class App extends React.Component {
         <div className="App">
           <Switch>
             <Route path="/dashboard" component={Dashboard}/>
-            <Route path="/stats" component={Statistics}/>
+            <Route path="/stats" render={()=>(
+              this.state.storage?
+              <Statistics storage={this.state.storage}/> : 
+              null
+            )}/>
+
             <Route path="/problems" component={Problems}/>
             <Route path="/order" render={()=> (
               <div className="OrderWrapper">

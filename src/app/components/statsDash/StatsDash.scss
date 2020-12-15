@@ -12,7 +12,6 @@
 
   h1,
   p {
-    font-family: "Inconsolata Regular";
     color: $secondary;
   }
 
@@ -26,7 +25,7 @@
     margin: 0 0 2.5vw 0;
   }
 
-  .BeerStorage {
+  .Storage {
     background-color: rgba(255, 255, 255, 0.8);
     display: grid;
     width: 78vw;
