@@ -3,7 +3,8 @@ import Dashboard from './pages/dashboard/Dashboard';
 import Statistics from './pages/dashboard/Statistics';
 import Problems from './pages/dashboard/Problems';
 import OrderForm from './pages/orderform/Orderform';
-import Payment from './pages/Payment';
+import Payment from './pages/orderform/Payment';
+import Approved from './pages/orderform/Approved';
 import {Route, Switch} from 'react-router';
 import {BrowserRouter as Router} from 'react-router-dom';
 import BarData from './services/BarData';
@@ -50,6 +51,9 @@ class App extends React.Component {
               )}/>
               <Route path="/payment" render={()=>(
                 <Payment/>
+                )}/>
+              <Route path="/approved" render={()=>(
+                <Approved/>
                 )}/>
           </Switch>
         </div>
