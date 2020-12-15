@@ -19,54 +19,55 @@
   .QueueBoxDash {
     background-color: rgba(255, 255, 255, 0.8);
     display: grid;
-    width: 50vw;
     grid-template-columns: 1fr;
-    height: 82vh;
-    padding: 20px;
-    margin: 0 2.5vw 0 0;
+    width: 60vw;
+    height: 60vh;
+    padding: 10px;
+    margin: 0 0 50px 0;
   }
 
   .ProcessBoxDash {
     background-color: rgba(255, 255, 255, 0.8);
     display: grid;
-    width: 50vw;
     grid-template-columns: 1fr;
-    height: 82vh;
-    padding: 20px;
-    margin: 0;
+    width: 60vw;
+    height: 60vh;
+    padding: 10px;
+    margin: 0 0 50px 0;
   }
 
   .ReadyBoxDash {
     background-color: rgba(255, 255, 255, 0.8);
     display: grid;
-    width: 50vw;
     grid-template-columns: 1fr;
-    height: 82vh;
-    padding: 20px;
-    margin: 0 0 0 2.5vw;
+    width: 60vw;
+    height: 60vh;
+    padding: 10px;
+    margin: 0 0 50px 0;
   }
 }
 
 @media screen and (min-width: 501px) {
   .overviewDash {
     margin: 0 auto;
-    max-width: 80vw;
+    max-width: 75vw;
     left: 25vw;
-  }
+  
   .QueueBoxDash {
-    width: 25vw;
-    margin: 0 2.5vw 0 0;
+    width: 64vw;
+    padding: 20px;
   }
 
   .ProcessBoxDash {
-    width: 25vw;
-    margin: 0;
+    width: 64vw;
+    padding: 20px;
   }
 
   .ReadyBoxDash {
-    width: 25vw;
-    margin: 0 0 0 2.5vw;
+    width: 64vw;
+    padding: 20px;
   }
+}
 }
 
 @media screen and (min-width: 1030px) {
@@ -76,20 +77,27 @@
     margin: 0 auto;
     max-width: 80vw;
     left: 17vw;
-  }
+  
 
   .QueueBoxDash {
     width: 25vw;
     margin: 0 2.5vw 0 0;
+    height: 82vh;
+    padding: 20px;
   }
 
   .ProcessBoxDash {
     width: 25vw;
     margin: 0;
+    height: 82vh;
+    padding: 20px;
   }
 
   .ReadyBoxDash {
     width: 25vw;
     margin: 0 0 0 2.5vw;
+    height: 82vh;
+    padding: 20px;
   }
+}
 }

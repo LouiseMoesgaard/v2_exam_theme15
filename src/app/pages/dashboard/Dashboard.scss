@@ -2,8 +2,8 @@
 
 .Dashboard {
   background: linear-gradient($secondary, $primary);
-  height: 290vh;
   z-index: 0;
+  padding-bottom: 100px;
 
   .p1 {
     background-image: url(../../images/planet1.svg);
@@ -60,17 +60,18 @@
   }
 
   .markup {
-    width: 6vw;
-    height: 4vw;
-    top: 39vh;
-    left: 2vw;
+    width: 12vw;
+    height: 8vw;
+    top: 41vh;
+    left: 4vw;
   }
 }
 
 @media screen and (min-width: 1030px) {
   .Dashboard {
     height: 100vh;
-  }
+    padding-bottom: 0;
+  
   .p1 {
     background-image: url(../../images/planet1.svg);
     width: 200px;
@@ -137,4 +138,5 @@
     top: 42vh;
     left: 0.8vw;
   }
+}
 }
