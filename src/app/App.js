@@ -8,12 +8,16 @@ import Approved from './pages/orderform/Approved';
 import {Route, Switch} from 'react-router';
 import {BrowserRouter as Router} from 'react-router-dom';
 import BarData from './services/BarData';
+import EventHandler from "./EventHandler";
 import './App.scss';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {}; 
+    EventHandler.subscribe("orderUp", (order)=>{
+      this.setState({order})
+    })
   }
 
   interval = null;
@@ -21,7 +25,7 @@ class App extends React.Component {
     componentDidMount () {
       this.interval = setInterval(() => {
         BarData.getData().then(data => {
-          this.setState(data);
+          this.setState({...data, order: null});
         })
       }, 10000);
     }
@@ -50,10 +54,10 @@ class App extends React.Component {
               </div>
               )}/>
               <Route path="/payment" render={()=>(
-                <Payment/>
+                <Payment order={this.state.order}/>
                 )}/>
               <Route path="/approved" render={()=>(
-                <Approved/>
+                <Approved order={this.state.order}/>
                 )}/>
           </Switch>
         </div>

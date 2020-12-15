@@ -2,6 +2,7 @@ import React from 'react';
 import NavigationOrder from '../../components/navigationOrder/NavigationOrder';
 import Product from '../../components/product/Product';
 import OrderDisplay from '../../components/orderDisplay/OrderDisplay';
+import EventHandler from "../../EventHandler";
 import './OrderForm.scss';
 
 class OrderForm extends React.Component {
@@ -16,8 +17,17 @@ class OrderForm extends React.Component {
         let orderCopy = [...this.state.order]
         
         let isProduct = orderCopy.findIndex(item => item.name === product.name);
-        
-        if(isProduct !== -1){
+        if(orderCopy.length === 0){
+            if(count > 0){
+                orderCopy.push({
+                    name: product.name,
+                    amount: count,
+                    price: product.price,
+                    type: product.type
+                })
+            }
+        }
+        else if(isProduct !== -1){
             orderCopy[isProduct].amount = count;
             if(orderCopy[isProduct].amount === 0){
                 orderCopy.splice(isProduct, 1);
@@ -35,6 +45,7 @@ class OrderForm extends React.Component {
         this.setState({
             order: orderCopy
         })
+        EventHandler.dispatch("orderUp", orderCopy);
     }
 
     render(){
