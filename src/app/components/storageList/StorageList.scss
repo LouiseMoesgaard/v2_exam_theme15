@@ -1,10 +1,30 @@
 @import "../../generalStyle/variables.scss";
 @import "../../generalStyle/fontface.scss";
 
+.StorageList {
+  h2 {
+    font-family: "Inconsolata Regular";
+    color: $secondary;
+  }
 
-.StorageList{
+  ul {
+    padding: 0;
+  }
 
-    h2{
-        color: $secondary;
-    }
+  li {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    font-family: "Inconsolata Regular";
+    color: $secondary;
+    font-weight: 800;
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+  span {
+    font-family: "Inconsolata Regular";
+    color: $secondary;
+    font-weight: 400;
+    font-size: 1rem;
+  }
 }

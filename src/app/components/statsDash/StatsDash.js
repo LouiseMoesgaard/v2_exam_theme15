@@ -11,13 +11,39 @@ class StatsDash extends React.Component {
                 <h1>Weekly sales...</h1>
 
                 <div className="SalesContainer">
-                    <p>Placeholder text</p>
-                <p>Placeholder text</p>
+                    <div className="salesDay">
+                        <h2>Monday</h2>
+                        <p>4675,70 kr.</p>
+                    </div>
+                    <div className="salesDay">
+                        <h2>Tuesday</h2>
+                        <p>4955,00 kr.</p>
+                    </div>
+                    <div className="salesDay">
+                        <h2>Wednesday</h2>
+                        <p>3995,00 kr.</p>
+                    </div>
+                    <div className="salesDay">
+                        <h2>Thursday</h2>
+                        <p>6870,50 kr.</p>
+                    </div>
+                    <div className="salesDay">
+                        <h2>Friday</h2>
+                        <p>10.595,50 kr.</p>
+                    </div>
+                    <div className="salesDay">
+                        <h2>Saturday</h2>
+                        <p>1000,00 kr.</p>
+                    </div>
+                    <div className="salesDay">
+                        <h2>Sunday</h2>
+                        <p>0,00 kr.</p>
+                    </div>
                 </div>
              </div>
 
              <div className="Storage">
-                <h1>In stock...</h1>
+                <h1>Stock...</h1>
 
                 <div className="StorageContainer">
                     <StorageList type="beer" storage={this.props.storage.filter((product)=> product.type == "beer")}></StorageList>

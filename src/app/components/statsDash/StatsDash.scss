@@ -7,20 +7,22 @@
   flex-direction: column;
   position: relative;
   top: 10vh;
-  left: 17vw;
+  left: 30vw;
   z-index: 2;
 
   h1,
+  h2,
   p {
+    font-family: "Inconsolata Regular";
     color: $secondary;
   }
 
   .WeekSales {
     background-color: rgba(255, 255, 255, 0.8);
     display: grid;
-    width: 78vw;
+    width: 50vw;
     grid-template-columns: 1fr;
-    height: 25vh;
+    height: 125vh;
     padding: 20px;
     margin: 0 0 2.5vw 0;
   }
@@ -28,15 +30,48 @@
   .Storage {
     background-color: rgba(255, 255, 255, 0.8);
     display: grid;
-    width: 78vw;
+    width: 50vw;
     grid-template-columns: 1fr;
-    height: 48vh;
+    height: 305vh;
     padding: 20px;
     margin: 0;
   }
-  .storageContainer {
+
+  .SalesContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 5px;
+  }
+
+  .StorageContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+  }
+}
+
+@media screen and (min-width: 1030px) {
+  .statisticsDash {
+    left: 18vw;
+
+    .SalesContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-gap: 10px;
+    }
+
+    .WeekSales {
+      width: 76vw;
+      height: 25vh;
+    }
+    .Storage {
+      width: 76vw;
+      height: 110vh;
+    }
+    .StorageContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 10px;
+    }
   }
 }
