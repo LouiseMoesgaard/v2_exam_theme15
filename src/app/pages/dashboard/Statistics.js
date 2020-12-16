@@ -17,7 +17,7 @@ class Statistics extends React.Component {
             <div className="p6"></div>
             <NavigationDash />
             <SideNavDash />
-            <StatsDash />
+            <StatsDash storage={this.props.storage}/>
             </div>
         );
         
