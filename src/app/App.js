@@ -69,8 +69,8 @@ class App extends React.Component {
               <Route path="/approved" render={()=>(
                 <Approved order={this.state.order}/>
                 )}/>
-                  <Route path="/help" render={()=>(
-                <Help order={this.state.order}/>
+                <Route path="/help" render={()=>(
+                <Help />
                 )}/>
           </Switch>
         </div>
