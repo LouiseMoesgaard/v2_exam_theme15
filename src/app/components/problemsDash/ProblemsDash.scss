@@ -34,17 +34,8 @@
     padding: 20px;
     margin: 0;
   }
-
-  .FailedPayment {
-    background-color: rgba(255, 255, 255, 0.8);
-    display: grid;
-    width: 25vw;
-    grid-template-columns: 1fr;
-    height: 82vh;
-    padding: 20px;
-    margin: 0 0 0 2.5vw;
-  }
 }
+
 @media screen and (min-width: 1030px) {
   .problemsBoxContainer {
     flex-wrap: nowrap;
