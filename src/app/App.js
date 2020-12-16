@@ -14,7 +14,7 @@ import './App.scss';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {}; 
+    this.state = null; 
     EventHandler.subscribe("orderUp", (order)=>{
       this.setState({order})
     })
@@ -41,7 +41,11 @@ class App extends React.Component {
       <Router>
         <div className="App">
           <Switch>
-            <Route path="/dashboard" component={Dashboard}/>
+            <Route path="/dashboard" render={()=>(
+              this.state?
+              <Dashboard data={this.state}></Dashboard>:
+              null
+            )}/>
             <Route path="/stats" component={Statistics}/>
             <Route path="/problems" component={Problems}/>
             <Route path="/order" render={()=> (

@@ -1,0 +1,28 @@
+@import "../../generalStyle/variables.scss";
+@import "../../generalStyle/fontface.scss";
+.OverviewDash {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: relative;
+  top: 10vh;
+  left: 17vw;
+  z-index: 2;
+  justify-content: center;
+
+  h1,
+  p {
+    font-family: "Inconsolata Regular";
+    color: $secondary;
+  }
+
+
+}
+@media screen and (min-width: 1030px) {
+  .OverviewDash {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin: 0 auto;
+    max-width: 80vw;
+  }
+}
