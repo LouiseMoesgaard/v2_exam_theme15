@@ -2,13 +2,19 @@
 
 .DashItems {
   display: grid;
-  grid-template-columns: 1fr 0.5fr;
+  grid-template-columns: 1fr 1fr;
   padding: 10px 10px;
   align-items: center;
+
+  .sep {
+    display: none;
+  }
 
   .textContainer {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-right: 10px;
   }
 
   .Timer {
@@ -30,7 +36,7 @@
   a:active {
     color: white;
     img {
-      width: 80%;
+      height: 40px;
     }
   }
   @media screen and (min-width: 700px) {
@@ -42,6 +48,11 @@
       align-items: center;
     }
 
+    .sep {
+      display: block;
+      margin-left: 10px;
+    }
+  
     .textContainer {
       justify-self: flex-end;
     }
