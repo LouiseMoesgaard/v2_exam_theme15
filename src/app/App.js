@@ -10,6 +10,7 @@ import {BrowserRouter as Router} from 'react-router-dom';
 import BarData from './services/BarData';
 import EventHandler from "./EventHandler";
 import './App.scss';
+import StorageList from "./components/storageList/StorageList";
 
 class App extends React.Component {
   constructor(props) {
@@ -46,7 +47,11 @@ class App extends React.Component {
               <Dashboard data={this.state}></Dashboard>:
               null
             )}/>
-            <Route path="/stats" component={Statistics}/>
+            <Route path="/stats" render={()=>(
+              this.state.storage?
+              <Statistics storage={this.state.storage}/> : 
+              null
+            )}/>
             <Route path="/problems" component={Problems}/>
             <Route path="/order" render={()=> (
               <div className="OrderWrapper">
