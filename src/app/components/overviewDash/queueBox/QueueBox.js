@@ -28,6 +28,7 @@ class QueueBox extends React.Component {
             .reduce((a,b)=>a+b);
         return total;
     }
+
   
     render(){
         const {title, data, detailed} = this.props;
@@ -39,7 +40,7 @@ class QueueBox extends React.Component {
                         data.map((order, index)=>{
                         return (
                             <div key={index}>
-                                <p>Order {order.id}</p>
+                                <h4>Order {order.id}</h4>
                                 {
                                     detailed?
                                     this.detailedOrder(order.order).map((product, i) =>{
@@ -52,7 +53,7 @@ class QueueBox extends React.Component {
                                 }
                                 {
                                 this.props.storage?
-                                <p>total: {this.orderTotal(order)} kr,-</p>: null
+                                <h5>Approved: {this.orderTotal(order)} kr,-</h5>: null
                                 }
                             </div>
                         )})

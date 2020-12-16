@@ -11,8 +11,8 @@
     }
 
     .payImg {
-        width: 60px;
-        height: 60px;
+        width: 12vw;
+        height: 12vw;
     }
 
     .mp .payImg {
@@ -34,6 +34,7 @@
     .payLeft {
         display: flex;
         flex-direction: column;
+        margin-left: 10px;
     }
 
     .payLeft p {
@@ -43,7 +44,7 @@
     }
 
     .phonenumber {
-        width: 40%;
+        width: 50%;
         font-family: 'Montreal Regular';
     }
 
@@ -55,19 +56,19 @@
     }
 
     .cardnumber {
-        width: 60%;
+        width: 70%;
         font-family: 'Montreal Regular';
         margin-bottom: 8px;
     }
 
     .expdate {
-        width: 30%;
+        width: 40%;
         font-family: 'Montreal Regular';
         margin-bottom: 8px;
     }
 
     .cvcnumber {
-        width: 15%;
+        width: 20%;
         font-family: 'Montreal Regular';
         margin-bottom: 200px;
     }
@@ -84,6 +85,11 @@
       .PaymentForm{
         margin: 0 25vw;
   
+        .payImg {
+          width: 50px;
+          height: 50px;
+      }
+
       }
     }
   }
@@ -93,6 +99,10 @@
       .PaymentForm{
         margin: 0 35vw;
   
+        .payImg {
+          width: 60px;
+          height: 60px;
+      }
       }
     }
   }

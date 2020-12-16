@@ -3,7 +3,7 @@
 .Product{
     display: grid;
     padding: 15px 20px;
-    grid-template-columns: 25% 47% 24%;
+    grid-template-columns: 18% 54% 24%;
     grid-template-rows: 31px 31px 31px;
     grid-gap: 2%;
     grid-template-areas: 
@@ -20,11 +20,12 @@
     img {
         width: 100%;
         grid-area: picture;
+        margin-top: 20px;
     }
     h3 {
         grid-area: header;
         margin: 0;
-
+        margin-left: 10px;
     }
     .ReadMore{
         grid-area: more;
@@ -32,6 +33,7 @@
         p {
             margin: 0;
             font-family: 'Inconsolata regular';
+            margin-left: 10px;
         }
     }
 

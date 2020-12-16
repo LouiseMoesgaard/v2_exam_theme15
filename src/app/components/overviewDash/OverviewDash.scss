@@ -5,10 +5,9 @@
   flex-wrap: wrap;
   flex-direction: column;
   position: relative;
-  top: 10vh;
-  left: 17vw;
+  top: 8vh;
+  left: 25vw;
   z-index: 2;
-  justify-content: center;
 
   h1,
   p {
@@ -24,5 +23,8 @@
     flex-direction: row;
     margin: 0 auto;
     max-width: 80vw;
+      top: 10vh;
+      left: 17vw;
+      justify-content: center;
   }
 }
