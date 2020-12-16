@@ -5,6 +5,7 @@ import Problems from './pages/dashboard/Problems';
 import OrderForm from './pages/orderform/Orderform';
 import Payment from './pages/orderform/Payment';
 import Approved from './pages/orderform/Approved';
+import Help from './pages/orderform/Help';
 import {Route, Switch} from 'react-router';
 import {BrowserRouter as Router} from 'react-router-dom';
 import BarData from './services/BarData';
@@ -67,6 +68,9 @@ class App extends React.Component {
                 )}/>
               <Route path="/approved" render={()=>(
                 <Approved order={this.state.order}/>
+                )}/>
+                  <Route path="/help" render={()=>(
+                <Help order={this.state.order}/>
                 )}/>
           </Switch>
         </div>

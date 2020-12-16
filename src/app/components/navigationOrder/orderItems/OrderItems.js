@@ -8,7 +8,7 @@ class OrderItems extends React.Component {
     render(){
         return (
             <div className="OrderItems">
-                <Link to="#">
+                <Link to="/help">
                     <p>Help?</p>
                 </Link>
 

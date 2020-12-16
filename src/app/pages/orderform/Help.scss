@@ -1,0 +1,58 @@
+@import "../../generalStyle/variables.scss";
+@import "../../generalStyle/fontface.scss";
+
+.Help {
+  background: linear-gradient($secondary, $primary);
+
+  h1 {
+    margin: 50px 20px;
+  }
+
+  .helpMessage {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 0 20px 50px 20px;
+    padding: 10px;
+  }
+
+  .helpMessage p {
+    color: $primary;
+  }
+  .helpMessage h3 {
+    color: $primary;
+  }
+
+  .tableNumber {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0 20px 50px 20px;
+
+    .tablenumber {
+      width: 150px;
+    }
+  }
+
+  .waitingAnimation {
+    margin: 0 20px 50px 20px;
+    padding-bottom: 50px;
+    img {
+      width: 100%;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .App {
+    .Help {
+      margin: 0 35vw;
+    }
+  }
+}
+
+@media screen and (min-width: 2200px) {
+  .App {
+    .Help {
+      margin: 0 40vw;
+    }
+  }
+}
