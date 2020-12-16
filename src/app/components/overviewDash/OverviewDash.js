@@ -8,7 +8,7 @@ class OverviewDash extends React.Component {
         return (
         <div className="OverviewDash">      
             <QueueBox title="Queue" data={this.props.data.queue} detailed={false}></QueueBox>   
-            <QueueBox title="Proccesing" data={this.props.data.serving} detailed={false}></QueueBox>
+            <QueueBox title="Proccesing" data={this.props.data.serving} detailed={true} storage={this.props.data.storage}></QueueBox>
         </div>
        );
     }

@@ -19,6 +19,10 @@ class App extends React.Component {
     EventHandler.subscribe("orderUp", (order)=>{
       this.setState({order})
     })
+
+    BarData.getData().then(data => {
+      this.setState({...data, order: null})
+    })
   }
 
   interval = null;

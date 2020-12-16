@@ -2,6 +2,32 @@ import React from 'react';
 import './QueueBox.scss';
 
 class QueueBox extends React.Component {
+
+
+    detailedOrder = (orderArray) => {
+        let returnValue = [];
+        orderArray.forEach(element => {
+            let current = this.props.storage[this.props.storage.findIndex(item => item.name === element)];
+            let alreadyExist = returnValue.findIndex(product=>product.name === element)
+            if(alreadyExist !== -1) {
+                returnValue[alreadyExist].amount += 1;
+            } else {
+                current.amount = 1;
+                returnValue.push(current);
+            }
+        });
+        return returnValue;
+    }
+
+    orderTotal = (order) =>{
+        let total =
+            order.order.map(product => {
+                const index = this.props.storage.findIndex(item => item.name === product);
+                return this.props.storage[index].price
+            })
+            .reduce((a,b)=>a+b);
+        return total;
+    }
   
     render(){
         const {title, data, detailed} = this.props;
@@ -10,7 +36,26 @@ class QueueBox extends React.Component {
                 <h1>{title}...</h1>
                 <div className="orderContainer">
                     {
-                        data.map((order, index)=><p key={index}>{order.id}</p>)
+                        data.map((order, index)=>{
+                        return (
+                            <div key={index}>
+                                <p>Order {order.id}</p>
+                                {
+                                    detailed?
+                                    this.detailedOrder(order.order).map((product, i) =>{
+                                            return (
+                                                <div key={i}>
+                                                    <p> {product.amount}x {product.name}</p>
+                                                </div>
+                                            )
+                                        }): null   
+                                }
+                                {
+                                this.props.storage?
+                                <p>total: {this.orderTotal(order)} kr,-</p>: null
+                                }
+                            </div>
+                        )})
                     }
                 </div>
              </div>
