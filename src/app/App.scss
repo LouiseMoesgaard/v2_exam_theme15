@@ -6,43 +6,39 @@ body {
 }
 
 h1{
+  font-family: 'Inconsolata regular';
   font-size: 2rem;
   color: $white;
-  padding: 0 20px;
 }
+
 
 h2{
+  font-family: 'Inconsolata regular';
   color: $white;
   font-size: 1.5rem;
-  padding: 0 20px;
 }
 
-@media screen and (min-width: 600px){
-  .App {
-    .OrderWrapper{
-      margin: 0 25vw;
-
-    }
-  }
+h3{
+  font-family: 'Inconsolata regular';
+  color: $white;
+  font-size: 1.2rem;
 }
 
-@media screen and (min-width: 1200px){
-  .App {
-    .OrderWrapper{
-      margin: 0 35vw;
 
-    }
-  }
+p,
+li{
+  font-family: 'Montreal regular';
+  color: $white;
+  font-size: 0.9rem;
+  line-height: 17px;
 }
 
-@media screen and (min-width: 2200px){
-  .App {
-    .OrderWrapper{
-      margin: 0 40vw;
-
-    }
-  }
+span {
+  font-family: 'Inconsolata regular';
+  color: $white;
+  font-size: 1.4rem;
 }
+
 
 
 

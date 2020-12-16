@@ -3,15 +3,21 @@ import Dashboard from './pages/dashboard/Dashboard';
 import Statistics from './pages/dashboard/Statistics';
 import Problems from './pages/dashboard/Problems';
 import OrderForm from './pages/orderform/Orderform';
+import Payment from './pages/orderform/Payment';
+import Approved from './pages/orderform/Approved';
 import {Route, Switch} from 'react-router';
 import {BrowserRouter as Router} from 'react-router-dom';
 import BarData from './services/BarData';
+import EventHandler from "./EventHandler";
 import './App.scss';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {}; 
+    EventHandler.subscribe("orderUp", (order)=>{
+      this.setState({order})
+    })
   }
 
   interval = null;
@@ -19,8 +25,7 @@ class App extends React.Component {
     componentDidMount () {
       this.interval = setInterval(() => {
         BarData.getData().then(data => {
-          this.setState(data);
-          console.log(this.state)
+          this.setState({...data, order: null});
         })
       }, 10000);
     }
@@ -39,7 +44,6 @@ class App extends React.Component {
             <Route path="/dashboard" component={Dashboard}/>
             <Route path="/stats" component={Statistics}/>
             <Route path="/problems" component={Problems}/>
-
             <Route path="/order" render={()=> (
               <div className="OrderWrapper">
                 {
@@ -49,6 +53,12 @@ class App extends React.Component {
                 }
               </div>
               )}/>
+              <Route path="/payment" render={()=>(
+                <Payment order={this.state.order}/>
+                )}/>
+              <Route path="/approved" render={()=>(
+                <Approved order={this.state.order}/>
+                )}/>
           </Switch>
         </div>
       </Router>

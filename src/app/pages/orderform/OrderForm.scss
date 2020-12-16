@@ -1,6 +1,38 @@
 @import '../../generalStyle/variables.scss';
+@import '../../generalStyle/fontface.scss';
 
 .OrderForm {
-    background-color: $secondary;
+    background: linear-gradient($secondary, $primary);
 
+    h1, 
+    h2 {
+        padding: 0 20px;
+    }
 }
+
+@media screen and (min-width: 600px){
+    .App {
+      .OrderWrapper{
+        margin: 0 25vw;
+  
+      }
+    }
+  }
+  
+  @media screen and (min-width: 1200px){
+    .App {
+      .OrderWrapper{
+        margin: 0 35vw;
+  
+      }
+    }
+  }
+  
+  @media screen and (min-width: 2200px){
+    .App {
+      .OrderWrapper{
+        margin: 0 40vw;
+  
+      }
+    }
+  }
