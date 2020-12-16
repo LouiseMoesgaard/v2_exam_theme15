@@ -3,4 +3,38 @@
 
 .NavigationOrder{
     background-color: $secondary;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0;
 }
+
+@media screen and (min-width: 600px){
+    .App {
+        .NavigationOrder{
+        top: 0;
+        left: 25vw;
+        right: 25vw;
+      }
+    }
+  }
+  
+  @media screen and (min-width: 1200px){
+    .App {
+        .NavigationOrder{
+        top: 0;
+        left: 35vw;
+        right: 35vw;
+      }
+    }
+  }
+  
+  @media screen and (min-width: 2200px){
+    .App {
+        .NavigationOrder{
+        top: 0;
+        left: 40vw;
+        right: 40vw;
+      }
+    }
+  }
