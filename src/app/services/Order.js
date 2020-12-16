@@ -8,7 +8,7 @@ const Order = {
                 "Content-Type": "application/json",
             }            
         }).then(r=>r.json())
-        .then(data=>console.log(data))
+        .then(data=>data)
     }
 }
 

@@ -1,0 +1,95 @@
+@import '../../generalStyle/variables.scss';
+@import '../../generalStyle/fontface.scss';
+
+.ApprovedOrder {
+    background: linear-gradient($secondary, $primary);
+
+    h1 {
+        margin: 50px 20px;
+    }
+
+    .approvalMessage {
+        background-color: rgba(255, 255, 255, 0.8);
+        margin: 0 20px 50px 20px;
+        padding: 10px;
+    }
+
+    .approvalMessage p {
+        color: $primary;
+    }
+    .approvalMessage h3 {
+        color: $primary;
+    }
+
+    .statusBar {
+        margin: 0 20px 50px 20px;
+        padding: 10px;
+        position: relative;
+        height: 70px;
+    }
+
+    .barEmpty {
+        background-image: url(../../images/status_empty.svg);
+        width: 100%;
+        height: 69px;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .barFull {
+        background-image: url(../../images/status_full.svg);
+        width: 100%;
+        height: 69px;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation: waiting 360s linear forwards;
+        transform-origin: left center;
+    }
+
+    @keyframes waiting {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+
+    .cheers {
+        margin: 0 20px 100px 20px
+    }
+
+    .spacer {
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 600px){
+    .App {
+      .ApprovedOrder{
+        margin: 0 25vw;
+  
+      }
+    }
+  }
+  
+  @media screen and (min-width: 1200px){
+    .App {
+      .ApprovedOrder{
+        margin: 0 35vw;
+  
+      }
+    }
+  }
+  
+  @media screen and (min-width: 2200px){
+    .App {
+      .ApprovedOrder{
+        margin: 0 40vw;
+  
+      }
+    }
+  }
