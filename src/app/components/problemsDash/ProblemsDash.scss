@@ -6,7 +6,7 @@
   flex-direction: column;
   position: relative;
   top: 10vh;
-  left: 17vw;
+  left: 30vw;
   z-index: 2;
 
   h1,
@@ -18,38 +18,56 @@
   .NeedsHelp {
     background-color: rgba(255, 255, 255, 0.8);
     display: grid;
-    width: 25vw;
+    width: 60vw;
     grid-template-columns: 1fr;
-    height: 82vh;
-    padding: 20px;
-    margin: 0 2.5vw 0 0;
+    height: 60vh;
+    padding: 10px;
+    margin: 0 0 50px 0;
   }
 
   .DoubleOrder {
     background-color: rgba(255, 255, 255, 0.8);
     display: grid;
-    width: 25vw;
+    width: 60vw;
     grid-template-columns: 1fr;
-    height: 82vh;
-    padding: 20px;
-    margin: 0;
-  }
-
-  .FailedPayment {
-    background-color: rgba(255, 255, 255, 0.8);
-    display: grid;
-    width: 25vw;
-    grid-template-columns: 1fr;
-    height: 82vh;
-    padding: 20px;
-    margin: 0 0 0 2.5vw;
+    height: 60vh;
+    padding: 10px;
+    margin: 0 0 50px 0;
   }
 }
+
 @media screen and (min-width: 1030px) {
   .problemsBoxContainer {
     flex-wrap: nowrap;
     flex-direction: row;
     margin: 0 auto;
     max-width: 80vw;
+    left: 17vw;
+  h1,
+  p {
+    font-family: "Inconsolata Regular";
+    color: $secondary;
   }
+
+  .NeedsHelp {
+    width: 25vw;
+    height: 82vh;
+    padding: 20px;
+    margin: 0 2.5vw 0 0;
+  }
+
+  .DoubleOrder {
+    width: 25vw;
+    height: 82vh;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .FailedPayment {
+    width: 25vw;
+    height: 82vh;
+    padding: 20px;
+    margin: 0 0 0 2.5vw;
+  }
+}
 }

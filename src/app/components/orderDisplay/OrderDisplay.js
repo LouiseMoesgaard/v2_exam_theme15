@@ -11,15 +11,13 @@ class OrderDisplay extends React.Component{
     totalAmount = (order) => {
         if(order.length > 0){
             return order.map(item => item.amount).reduce((a,b)=> a+b)
-
         } 
         return 0;
     }
 
     totalPrice = (order) => {
         if(order.length > 0){
-        return order.map(item => item.price).reduce((a,b)=> a+b)
-
+            return order.map(item => item.price).reduce((a,b)=> a+b)
         } 
         return 0;
     }
@@ -51,7 +49,7 @@ class OrderDisplay extends React.Component{
 
                 <div className="SubmitGrid">
                     <h2>Continue</h2>
-                    <CircleButton></CircleButton>
+                    <CircleButton link="/payment"></CircleButton>
                 </div>
     
             </div>
