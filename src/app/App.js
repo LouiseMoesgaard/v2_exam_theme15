@@ -15,7 +15,7 @@ import StorageList from "./components/storageList/StorageList";
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = null; 
+    this.state = {}; 
     EventHandler.subscribe("orderUp", (order)=>{
       this.setState({order})
     })
@@ -43,7 +43,7 @@ class App extends React.Component {
         <div className="App">
           <Switch>
             <Route path="/dashboard" render={()=>(
-              this.state?
+              this.state.queue?
               <Dashboard data={this.state}></Dashboard>:
               null
             )}/>
