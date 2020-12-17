@@ -68,7 +68,7 @@ class App extends React.Component {
               </div>
               )}/>
               <Route path="/payment" render={()=>(
-                <Payment order={this.state.order} storage={this.state.storage}/>
+                <Payment order={this.state.order}/>
                 )}/>
               <Route path="/approved" render={()=>(
                 <Approved order={this.state.order}/>
