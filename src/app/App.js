@@ -31,7 +31,7 @@ class App extends React.Component {
     componentDidMount () {
       this.interval = setInterval(() => {
         BarData.getData().then(data => {
-          this.setState({...data, order: null});
+          this.setState({...data});
         })
       }, 10000);
     }
@@ -68,7 +68,7 @@ class App extends React.Component {
               </div>
               )}/>
               <Route path="/payment" render={()=>(
-                <Payment order={this.state.order}/>
+                <Payment order={this.state.order} storage={this.state.storage}/>
                 )}/>
               <Route path="/approved" render={()=>(
                 <Approved order={this.state.order}/>

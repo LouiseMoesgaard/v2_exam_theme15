@@ -3,7 +3,7 @@
 .Dashboard {
   background: linear-gradient($secondary, $primary);
   z-index: 0;
-  padding-bottom: 100px;
+  padding-bottom: 150px;
 
   .p1 {
     background-image: url(../../images/planet1.svg);
@@ -32,16 +32,6 @@
     position: absolute;
     top: 70vh;
     left: 43vw;
-    z-index: 1;
-  }
-
-  .p4 {
-    background-image: url(../../images/planet2.svg);
-    width: 110px;
-    height: 110px;
-    position: absolute;
-    top: 125vh;
-    left: 28vw;
     z-index: 1;
   }
 
