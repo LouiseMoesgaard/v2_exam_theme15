@@ -18,6 +18,11 @@ class Approved extends React.Component {
         return (
             <div className="ApprovedOrder">
                 <NavigationOrder />
+                <div className="p1"></div>
+                <div className="p2"></div>
+                <div className="p3"></div>
+                <div className="p4"></div>
+                <div className="p5"></div>
                 <h1>Approved...</h1>
                 <div className="approvalMessage">
                     <p>Thanks for placing an order! We will prepare your serving for you. Your order number is:</p>
