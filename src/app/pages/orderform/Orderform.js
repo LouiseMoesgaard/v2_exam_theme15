@@ -54,6 +54,16 @@ class OrderForm extends React.Component {
             <div className="OrderForm">
                 <NavigationOrder></NavigationOrder>
 
+                <div className="p1"></div>
+                <div className="p2"></div>
+                <div className="p3"></div>
+                <div className="p4"></div>
+                <div className="p5"></div>
+                <div className="p6"></div>
+                <div className="p7"></div>
+                <div className="p8"></div>
+                <div className="p9"></div>
+
                 <h1>Beers...</h1>
                 <h2>30 kr.</h2>
 

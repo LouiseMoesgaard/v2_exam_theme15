@@ -11,6 +11,10 @@ class Payment extends React.Component {
         return (
             <div className="PaymentForm">
                 <NavigationOrder />
+                <div className="p1"></div>
+                <div className="p2"></div>
+                <div className="p3"></div>
+                <div className="p4"></div>
                 <div className="mp">
                     <div className="payImg"></div>
                     <div className="payLeft">
