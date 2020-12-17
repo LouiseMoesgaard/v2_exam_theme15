@@ -15,7 +15,7 @@ class OverviewDash extends React.Component {
         let cur_orders = JSON.stringify(this.props.data.serving);
         let prev_orders = JSON.stringify(prevProps.data.serving);
         if (cur_orders !== prev_orders) {
-          let doneOrders = prevProps.data.serving.filter(x=>this.props.data.serving.findIndex(y=>y===x)===-1);
+          let doneOrders = prevProps.data.serving.filter(x=>this.props.data.serving.findIndex(y=>y.id===x.id)===-1);
           this.setState({completeArray: doneOrders});
         }
       }

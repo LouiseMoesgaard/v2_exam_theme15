@@ -9,15 +9,15 @@ class ProblemsDash extends React.Component {
             <div className="NeedsHelp">
                 <h1>Needs help...</h1>
                 <div className="problemsContainer">
-                    <p>Placeholder text</p>
-                    <p>Placeholder text</p>
+                    <p>Table 1</p>
+                    <p>Table 7</p>
              </div>
              </div>
              <div className="DoubleOrder">
                 <h1>Double order...</h1>
                 <div className="problemsContainer">
-                    <p>Placeholder text</p>
-                    <p>Placeholder text</p>
+                    <p>Order 201</p>
+                    <p>Order 213</p>
              </div>
              </div>
             </div>

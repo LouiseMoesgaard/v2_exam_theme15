@@ -13,7 +13,7 @@ class OrderItems extends React.Component {
                     <p>Back (x)</p>
                 </Link>
 
-                <Link to="#">
+                <Link to="/order">
                     <img alt="logo" src={logo}></img>
                 </Link>
             </div>: <div className="OrderItems">
@@ -21,7 +21,7 @@ class OrderItems extends React.Component {
                             <p>Help?</p>
                         </Link>
 
-                        <Link to="#">
+                        <Link to="/order">
                             <img alt="logo" src={logo}></img>
                         </Link>
                     </div>
