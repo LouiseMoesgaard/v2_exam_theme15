@@ -17,7 +17,7 @@ class OrderDisplay extends React.Component{
 
     totalPrice = (order) => {
         if(order.length > 0){
-            return order.map(item => item.price).reduce((a,b)=> a+b)
+            return order.map(item => item.price*item.amount).reduce((a,b)=> a+b)
         } 
         return 0;
     }
@@ -34,7 +34,7 @@ class OrderDisplay extends React.Component{
                 <ul>
                     {
                         order.map((value, index)=>{
-                        return  <li key={index}>{value.amount} x {value.name} <span>{value.price} kr.</span></li> 
+                        return  <li key={index}>{value.amount} x {value.name} <span>{value.price*value.amount} kr.</span></li> 
                         })
                     }
                 </ul>

@@ -46,10 +46,10 @@ class StatsDash extends React.Component {
                 <h1>Stock...</h1>
 
                 <div className="StorageContainer">
-                    <StorageList type="beer" storage={this.props.storage.filter((product)=> product.type == "beer")}></StorageList>
-                    <StorageList type="cider" storage={this.props.storage.filter((product)=> product.type == "cider")}></StorageList>
-                    <StorageList type="shots" storage={this.props.storage.filter((product)=> product.type == "shots")}></StorageList>
-                    <StorageList type="snacks" storage={this.props.storage.filter((product)=> product.type == "snacks")}></StorageList>
+                    <StorageList type="beer" storage={this.props.storage.filter((product)=> product.type === "beer")}></StorageList>
+                    <StorageList type="cider" storage={this.props.storage.filter((product)=> product.type === "cider")}></StorageList>
+                    <StorageList type="shots" storage={this.props.storage.filter((product)=> product.type === "shots")}></StorageList>
+                    <StorageList type="snacks" storage={this.props.storage.filter((product)=> product.type === "snacks")}></StorageList>
                 </div>
             </div>
         </div>

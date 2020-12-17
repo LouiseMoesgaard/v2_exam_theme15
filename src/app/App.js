@@ -11,7 +11,6 @@ import {BrowserRouter as Router} from 'react-router-dom';
 import BarData from './services/BarData';
 import EventHandler from "./EventHandler";
 import './App.scss';
-import StorageList from "./components/storageList/StorageList";
 
 class App extends React.Component {
   constructor(props) {
@@ -27,9 +26,10 @@ class App extends React.Component {
   }
 
   interval = null;
-
+  //sets up interval when app mounts
     componentDidMount () {
       this.interval = setInterval(() => {
+        console.log(this.state)
         BarData.getData().then(data => {
           this.setState({...data});
         })

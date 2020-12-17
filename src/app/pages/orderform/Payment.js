@@ -1,16 +1,34 @@
 import React from 'react';
 import NavigationOrder from '../../components/navigationOrder/NavigationOrder';
 import CircleButton from '../../components/circleButton/CircleButton';
-import arrowpurple from '../../images/arrowpurple.svg';
-import OrderDisplay from '../../components/orderDisplay/OrderDisplay';
 
 import './Payment.scss';
 
 class Payment extends React.Component {
+    //get the summed price of entire order
+    totalPrice = () => {
+        if(this.props.order.length > 0){
+            return this.props.order.map(item => item.price*item.amount).reduce((a,b)=> a+b)
+        } 
+        return 0;
+    }
+    //get total number of items in order
+    totalAmount = () => {
+        if(this.props.order.length > 0){
+            return this.props.order.map(item => item.amount).reduce((a,b)=> a+b)
+        } 
+        return 0;
+    }
+
     render(){
         return (
             <div className="PaymentForm">
                 <NavigationOrder />
+                <h1>CHART...</h1>
+                <div>
+                    <span>{this.totalAmount()} items</span>
+                    <span>Total: {this.totalPrice()} kr,-</span>
+                </div>
                 <div className="mp">
                     <div className="payImg"></div>
                     <div className="payLeft">
