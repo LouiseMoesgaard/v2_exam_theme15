@@ -53,7 +53,7 @@ class QueueBox extends React.Component {
                                 }
                                 {
                                 this.props.storage?
-                                <h5>Approved: {this.orderTotal(order)} kr,-</h5>: null
+                                <h5>Approved: {this.orderTotal(order)} kr.</h5>: null
                                 }
                             </div>
                         )})
