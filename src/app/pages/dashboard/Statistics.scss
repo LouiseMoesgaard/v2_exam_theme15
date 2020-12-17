@@ -2,8 +2,8 @@
 
 .Statistic {
   background: linear-gradient($secondary, $primary);
-  height: 460vh;
   z-index: 0;
+  padding-bottom: 150px;
 
   .p1 {
     background-image: url(../../images/planet1.svg);
@@ -40,7 +40,7 @@
     width: 110px;
     height: 110px;
     position: absolute;
-    top: 320vh;
+    top: 300vh;
     left: 70vw;
     z-index: 1;
   }
@@ -51,7 +51,7 @@
     height: 220px;
     position: absolute;
     top: 90vh;
-    left: 50vw;
+    left: 45vw;
     z-index: 1;
   }
 
@@ -109,7 +109,6 @@
 
 @media screen and (min-width: 1030px) {
   .Statistic {
-    height: 190vh;
   .markup {
     width: 12vw;
     height: 8vw;

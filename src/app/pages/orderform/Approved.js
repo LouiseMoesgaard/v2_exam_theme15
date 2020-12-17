@@ -21,7 +21,7 @@ class Approved extends React.Component {
                 <h1>Approved...</h1>
                 <div className="approvalMessage">
                     <p>Thanks for placing an order! We will prepare your serving for you. Your order number is:</p>
-                    <h3>NUMBER {this.state.orderNumber}</h3>
+                    <h3>Order Number {this.state.orderNumber}</h3>
                     <p>Keep an eye on the screen, and come get your order when your number pops up on the screen!</p>
                 </div>
                 <div className="statusBar">

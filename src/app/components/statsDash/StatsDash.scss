@@ -20,21 +20,21 @@
   .WeekSales {
     background-color: rgba(255, 255, 255, 0.8);
     display: grid;
-    width: 50vw;
+    width: 60vw;
     grid-template-columns: 1fr;
-    height: 125vh;
-    padding: 20px;
-    margin: 0 0 2.5vw 0;
+    height: auto;
+    padding: 10px;
+    margin: 0;
   }
 
   .Storage {
     background-color: rgba(255, 255, 255, 0.8);
     display: grid;
-    width: 50vw;
+    width: 60vw;
     grid-template-columns: 1fr;
-    height: 305vh;
-    padding: 20px;
-    margin: 0;
+    height: auto;
+    padding: 10px;
+    margin: 30px 0;
   }
 
   .SalesContainer {
@@ -62,11 +62,13 @@
 
     .WeekSales {
       width: 76vw;
-      height: 25vh;
+      height: auto;
+      padding-left: 20px;
     }
     .Storage {
       width: 76vw;
-      height: 110vh;
+      height: auto;
+      padding-left: 20px;
     }
     .StorageContainer {
       display: grid;
