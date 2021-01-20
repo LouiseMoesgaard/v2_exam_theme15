@@ -8,7 +8,7 @@ class Approved extends React.Component {
     constructor(props) {
         super(props);
         this.state = {};
-        Order.sendOrder(props.order).then(data=>{
+        Order.sendOrder(props.order.filter(order=>order.type === 'beer')).then(data=>{
             if(data.status === 200) {
                 this.setState({orderNumber: data.id})
             }

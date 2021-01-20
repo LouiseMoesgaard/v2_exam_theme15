@@ -48,6 +48,12 @@ class OrderForm extends React.Component {
         EventHandler.dispatch("orderUp", orderCopy);
     }
 
+    beerOnTap = (beer) => {
+        return !this.props.taps.some(tap =>{
+            return tap.beer === beer;
+        })
+    }
+
     render(){
         const { storage } = this.props;
         return (
@@ -68,8 +74,8 @@ class OrderForm extends React.Component {
                 <h2>30 kr.</h2>
 
                 {
-                    storage.filter((product)=> product.type == "beer").map((value, index)=>{
-                        return <Product product={value} onCountChange={this.getCount} key={index}></Product>
+                    storage.filter((product)=> product.type === "beer").map((value, index)=>{
+                        return <Product product={value} onCountChange={this.getCount} key={index} onTap={this.beerOnTap(value.name)}></Product>
                     })
                 }
 
@@ -77,7 +83,7 @@ class OrderForm extends React.Component {
                 <h2>40 kr.</h2>
 
                 {
-                    storage.filter((product)=> product.type == "cider").map((value, index)=>{
+                    storage.filter((product)=> product.type === "cider").map((value, index)=>{
                         return <Product product={value} onCountChange={this.getCount} key={index}></Product>
                     })
                 }
@@ -86,7 +92,7 @@ class OrderForm extends React.Component {
                 <h2>15 kr.</h2>
 
                 {
-                    storage.filter((product)=> product.type == "shots").map((value, index)=>{
+                    storage.filter((product)=> product.type === "shots").map((value, index)=>{
                         return <Product product={value} onCountChange={this.getCount} key={index}></Product>
                     })
                 }
@@ -96,12 +102,15 @@ class OrderForm extends React.Component {
                 <h2>25 kr.</h2>
 
                 {
-                    storage.filter((product)=> product.type == "snacks").map((value, index)=>{
+                    storage.filter((product)=> product.type === "snacks").map((value, index)=>{
                         return <Product product={value} onCountChange={this.getCount} key={index}></Product>
                     })
                 }
 
-                <OrderDisplay order={this.state.order}></OrderDisplay>
+                {
+                 this.state.order?   
+                <OrderDisplay order={this.state.order}></OrderDisplay>: null
+                }
             </div>
         );
     }

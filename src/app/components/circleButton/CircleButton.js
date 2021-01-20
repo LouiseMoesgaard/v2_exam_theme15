@@ -14,7 +14,7 @@ class CircleButton extends React.Component{
     render(){
 
         return(
-            <Link to={this.props.link}>
+            <Link to={this.props.link} onClick={e=>this.props.callback? this.props.callback(e): null}>
                 <div className="CircleButton">
                     <img src={arrow}/>
                 </div>

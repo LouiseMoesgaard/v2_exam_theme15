@@ -40,27 +40,38 @@ class Product extends React.Component {
     render(){
         const { product } = this.props;
         return (
-            <div className={`Product ${this.state.readMoreOpen ? "desc" : ""}`}>
-                <img alt="The product" src={PRODUCTIMG[product.name]}/>
-                <h3> {product.name} </h3>
-                <div className="ReadMore">
-                    <p onClick={()=> (this.setState((state)=> ({readMoreOpen:!state.readMoreOpen})))}>
-                        {this.state.readMoreOpen? "Read less": "Read more"}...
-                    </p> 
+            <div className="Product">
 
-                    {
-                        this.state.readMoreOpen?
-                        <div className="descText">
-                        <p>{product.desc}</p>
-                        </div>: null
-                    }
-                </div>
+                {
+                    this.props.onTap?
+                <div className="NotOnTap">
+                    <p>Not currently available</p>
+                </div>: null
+                }
 
-                <div className="Count">
-                    <button onClick={()=> (this.setState((state,props)=> (this.decrement(state, props))))}>-</button>
-                    <span>{this.state.count}</span>
-                    <button onClick={()=> (this.setState((state, props)=> (this.increment(state, product.amount, props))))}>+</button>
+                <div className={`grid ${this.state.readMoreOpen ? "desc" : ""}`}>
+                    <img alt="The product" src={PRODUCTIMG[product.name]}/>
+                    <h3> {product.name} </h3>
+                    <div className="ReadMore">
+                        <p onClick={()=> (this.setState((state)=> ({readMoreOpen:!state.readMoreOpen})))}>
+                            {this.state.readMoreOpen? "Close(x)": "Read more..."}
+                        </p> 
+
+                        {
+                            this.state.readMoreOpen?
+                            <div className="descText">
+                            <p>{product.desc}</p>
+                            </div>: null
+                        }
+                    </div>
+
+                    <div className="Count">
+                        <button onClick={()=> (this.setState((state,props)=> (this.decrement(state, props))))}>-</button>
+                        <span>{this.state.count}</span>
+                        <button onClick={()=> (this.setState((state, props)=> (this.increment(state, product.amount, props))))}>+</button>
+                    </div>
                 </div>
+                
             </div>
 
 

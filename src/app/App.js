@@ -61,8 +61,8 @@ class App extends React.Component {
             <Route path="/order" render={()=> (
               <div className="OrderWrapper">
                 {
-                  this.state.storage?
-                  <OrderForm storage={this.state.storage}/> :
+                  this.state.storage && this.state.taps?
+                  <OrderForm storage={this.state.storage} taps={this.state.taps}/> :
                   null
                 }
               </div>

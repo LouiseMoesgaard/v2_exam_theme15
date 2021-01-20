@@ -1,72 +1,97 @@
 @import '../../generalStyle/variables.scss';
 
 .Product{
-    display: grid;
+    position: relative;
     padding: 15px 20px;
-    grid-template-columns: 18% 54% 24%;
-    grid-template-rows: 31px 31px 31px;
-    grid-gap: 2%;
-    grid-template-areas: 
-    "picture . ."
-    "picture header count"
-    "picture more more"
-    ;
-
-    &.desc {
-        grid-template-rows: 31px 31px 150px; 
-    }
 
 
-    img {
-        width: 100%;
-        grid-area: picture;
-        margin-top: 20px;
-    }
-    h3 {
-        grid-area: header;
-        margin: 0;
-        margin-left: 10px;
-    }
-    .ReadMore{
-        grid-area: more;
-
-        p {
-            margin: 0;
-            font-family: 'Inconsolata regular';
-            margin-left: 10px;
-        }
-    }
-
-    .descText{
-        background-color: rgba(255, 255, 255, 0.8);
-        padding: 10px; 
-        margin-top: 5px;
+    .NotOnTap{
+        position: absolute;
+        padding: 15px 20px;
+        top: 15px;
+        left: 20px;
+        background-color: rgba($color: $white, $alpha: 0.9);
+        width: 335.5px;
+        height: 63px;
+        display: grid;
 
         p{
-            color: $primary;;
-        }
-        
-    }
-
-    .Count{
-        grid-area: count;
-        justify-self: flex-end;
-
-        span{
-            padding: 0 10px;
-        }
-
-        button{
-            display: inline-block;
-            border-radius: 50%;
-            text-align: center;
-            border: 0;
-            padding: 0;
-            width: 20px;
-            height: 20px;
-            line-height: 20px;
-            font-size: 20px;
+            color: $primary;
+            
+            margin: 0 auto;
+            width: 50%;
+            justify-self: center;
+            align-self: center;
         }
     }
+
+    .grid{
+        display: grid;
+        grid-template-columns: 18% 54% 24%;
+        grid-template-rows: 31px 31px 31px;
+        grid-gap: 2%;
+        grid-template-areas: 
+        "picture . ."
+        "picture header count"
+        "picture more more"
+        ;
+       
+
+        &.desc {
+            grid-template-rows: 31px 31px 150px; 
+        }
     
+    
+        img {
+            width: 100%;
+            grid-area: picture;
+            margin-top: 20px;
+        }
+        h3 {
+            grid-area: header;
+            margin: 0;
+            margin-left: 10px;
+        }
+        .ReadMore{
+            grid-area: more;
+    
+            p {
+                margin: 0;
+                font-family: 'Inconsolata regular';
+                margin-left: 10px;
+            }
+        }
+    
+        .descText{
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px; 
+            margin-top: 5px;
+    
+            p{
+                color: $primary;
+            }
+            
+        }
+    
+        .Count{
+            grid-area: count;
+            justify-self: flex-end;
+    
+            span{
+                padding: 0 10px;
+            }
+    
+            button{
+                display: inline-block;
+                border-radius: 50%;
+                text-align: center;
+                border: 0;
+                padding: 0;
+                width: 20px;
+                height: 20px;
+                line-height: 20px;
+                font-size: 20px;
+            }
+        }
+    }
 }

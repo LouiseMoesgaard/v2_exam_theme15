@@ -22,6 +22,12 @@ class OrderDisplay extends React.Component{
         return 0;
     }
 
+    preventDefault = (e) => {
+        if(this.props.order.length === 0){
+            e.preventDefault();
+        }
+    }
+
     render(){
         const { order } = this.props;
         return(
@@ -49,7 +55,7 @@ class OrderDisplay extends React.Component{
 
                 <div className="SubmitGrid">
                     <h2>Continue</h2>
-                    <CircleButton link="/payment"></CircleButton>
+                    <CircleButton link="/payment" callback={this.preventDefault}></CircleButton>
                 </div>
     
             </div>
